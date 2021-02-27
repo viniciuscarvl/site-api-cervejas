@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cervejaria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
+    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/sweetalerts.js"></script>
+    <script>getData()</script>
+</head>
+<body>
+    <script>popupCadastre()</script>
+    <section id="home">
+        <header>
+            <div class="container-menu">
+                <div class="navbar">
+                    <div class="logo-cervejaria">Cervejaria</div>
+                    <nav>
+                        <ul>
+                            <li class="texto-navbar"><a href="#home">home</a></li>
+                            <li class="texto-navbar"><a href="#cervejas">cervejas</a></li>
+                            <li class="texto-navbar"><button onclick="popupCadastroEmail()">cadastre-se</button></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section id="hero">
+        <div class="hero">
+            <div class="imagem-hero">
+                <a class="button-hero" href="#cervejas">Confira nossas sugestões</a>
+            </div>
+        </div>
+    </section>
+    <section id="cervejas">
+        <div class="texto-nossas-recomendacoes">Nossas melhores recomendações para você!</div>
+        <div class="container-cervejas">
+            <div class="card">
+                <img class="imagem-cerveja" src="">
+                <div class="nome-cerveja"></div>
+                <div class="descricao-cerveja"></div>
+            </div>
+            <div class="card">
+                <img class="imagem-cerveja" src="">
+                <div class="nome-cerveja"></div>
+                <div class="descricao-cerveja"></div>
+            </div> 
+            <div class="card">
+                <img class="imagem-cerveja" src="">
+                <div class="nome-cerveja"></div>
+                <div class="descricao-cerveja"></div>
+            </div> 
+            <div class="card">
+                <img class="imagem-cerveja" src="">
+                <div class="nome-cerveja"></div>
+                <div class="descricao-cerveja"></div>
+            </div>
+            <div class="card">
+                <img class="imagem-cerveja" src="">
+                <div class="nome-cerveja"></div>
+                <div class="descricao-cerveja"></div>
+            </div>      
+        </div>
+
+        <div class="container-buttons">
+            <div class="button-recarregar">
+                <div>Não gostou?</div>
+                <a href="#cervejas"><button onclick="getData()">Recarregar sugestões</button></a>
+            </div>
+            <div class="button-conheca-mais">
+                <div>Gostou?</div>
+                <button onclick="popupCadastroEmail()">Conheça mais</button>
+            </div>
+        </div>
+    </section>
+    <section id="rodape">
+        <footer class="rodape">
+            <div class="container-rodape">
+                <span class="texto-rodape-logo">Cervejaria</span>
+                <span class="texto-rodape-nav"><a href="#home">home</a></span>
+                <span class="texto-rodape-nav"><a href="#cervejas">cervejas</a></span>
+                <span class="texto-rodape-nav"><button onclick="popupCadastroEmail()">cadastre-se</button></span>
+                <span class="texto-rodape-contato">contato@cervejaria.com.br</span>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
